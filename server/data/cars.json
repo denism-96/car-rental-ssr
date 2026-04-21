@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2022,
+    "pricePerDay": 70,
+    "image": "/images/toyota-camry.jpg"
+  },
+  {
+    "id": 2,
+    "brand": "BMW",
+    "model": "X5",
+    "year": 2023,
+    "pricePerDay": 120,
+    "image": "/images/bmw-x5.jpg"
+  }
+]
