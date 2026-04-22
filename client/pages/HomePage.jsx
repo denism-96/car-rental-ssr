@@ -1,7 +1,9 @@
+import Hero from "../components/Home/Hero";
+
 function HomePage() {
   return (
     <section className="space-y-6">
-      <p>Hello</p>
+      <Hero />
     </section>
   );
 }
