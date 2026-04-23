@@ -2,6 +2,7 @@ import { StrictMode } from "react";
 import { hydrateRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./app/App";
+import "./styles/reset.css";
 import "./styles/index.css";
 
 hydrateRoot(

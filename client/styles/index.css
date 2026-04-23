@@ -2,6 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --black-text: #222;
+  --white-text: #fff;
+  --gray-text: #9b9696;
+  --red-text: #fd3b3b;
+
+  --btn-red-text: #fd3b3b;
+  --btn-white-text: #fff;
+  --btn-red-color: #fd3b3b;
+
+  --bg-gray-color: #f8f8f8;
+  --bg-red-color: #fd3b3b;
+}
+
 body {
-  @apply bg-slate-100 text-slate-900;
+  font-family: "Syne", "sans-serif";
+}
+.title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 100%;
+}
+
+.descr {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 50px 0 50px;
+}
+
+.btn {
+  padding: 10px 25px 10px 25px;
+  border-radius: 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn_red {
+  color: var(--btn-white-text);
+  background-color: var(--btn-red-color);
+}
+
+.btn_red:hover {
+  color: var(--btn-red-text);
+  background-color: #fff;
+}
+
+.btn_transparent {
+  color: var(--btn-red-text);
+  background-color: transparent;
+}
+
+.btn_transparent:hover {
+  color: var(--btn-white-text);
+  background-color: var(--btn-red-color);
 }

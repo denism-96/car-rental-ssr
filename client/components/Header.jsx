@@ -1,14 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "./Ui/Button";
 
 export default function Header() {
   return (
-    <header>
+    <header className="flex justify-between">
       <Link to="/">
-        <img src="#" alt="logo" />
+        <img src="/images/main_logo.svg"></img>
       </Link>
-      <nav>
-        <ul>
+      <nav className="max-w-sm w-full">
+        <ul className="flex justify-between text-base">
           <li>
             <Link>Home</Link>
           </li>
@@ -23,9 +24,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-      <div>
-        <button>Contacts</button>
-        <button>Sign up</button>
+      <div className="flex text-base">
+        <Button className=" btn btn_transparent">Contacts</Button>
+        <Button className=" btn btn_red ml-4">Sign up</Button>
       </div>
     </header>
   );
