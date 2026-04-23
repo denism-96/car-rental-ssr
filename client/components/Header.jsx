@@ -4,9 +4,9 @@ import Button from "./Ui/Button";
 
 export default function Header() {
   return (
-    <header className="flex justify-between">
+    <header className="flex justify-between items-center">
       <Link to="/">
-        <img src="/images/main_logo.svg"></img>
+        <img src="/images/others/main_logo.svg"></img>
       </Link>
       <nav className="max-w-sm w-full">
         <ul className="flex justify-between text-base">

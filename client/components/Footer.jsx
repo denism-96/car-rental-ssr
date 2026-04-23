@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
   return (
     <>
-      <div>
+      <footer>
         <div>
           <div>
             <h2>Don’t Miss a Thing</h2>
@@ -37,7 +37,7 @@ export default function Footer() {
             <img src="#" alt="" />
           </button>
         </div>
-      </div>
+      </footer>
     </>
   );
 }
