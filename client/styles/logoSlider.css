@@ -1,0 +1,47 @@
+.slider-container {
+  overflow: hidden;
+  background-color: #fff;
+  margin: 0 auto;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.slider-logo_effects {
+  width: 1340px;
+  box-shadow: 0px 4px 16px 0px #cacaca;
+  border-radius: 10px;
+}
+
+.slider_for-about {
+  width: 1440px;
+}
+
+.sliderLogo {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  animation: slide 20s linear infinite;
+}
+
+.brandsLogo {
+  flex: 0 0 auto;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.brandsLogo img {
+  width: 100px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+
+  100% {
+    transform: translateX(-1870px);
+  }
+}
