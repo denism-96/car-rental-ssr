@@ -7,16 +7,6 @@
   align-items: center;
 }
 
-.slider-logo_effects {
-  width: 1340px;
-  box-shadow: 0px 4px 16px 0px #cacaca;
-  border-radius: 10px;
-}
-
-.slider_for-about {
-  width: 1440px;
-}
-
 .sliderLogo {
   display: flex;
   width: 100%;

@@ -4,7 +4,7 @@ import Button from "./Ui/Button";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center">
+    <header className="flex justify-between items-center absolute max-w-[1340px] w-full  ">
       <Link to="/">
         <img src="/images/others/main_logo.svg"></img>
       </Link>

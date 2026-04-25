@@ -25,7 +25,7 @@ export default function LogoSlider() {
   const dublicateLogo = [...logos, ...logos];
 
   return (
-    <div className={`slider-container `}>
+    <div className="slider-container">
       <div className="sliderLogo">
         {dublicateLogo.map((logo, index) => {
           return (
