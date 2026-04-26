@@ -33,7 +33,7 @@ export default function Hero() {
                 their car.
               </p>
             </div>
-            <div className="flex flex-wrap w-52 justify-between ">
+            <div className="flex flex-wrap w-52 justify-between text-[var(--red-text)]">
               <Button className="btn border border-[var(--bg-red-color)] mb-4">
                 Rent
               </Button>
