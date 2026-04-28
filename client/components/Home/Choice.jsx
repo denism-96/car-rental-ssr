@@ -1,5 +1,5 @@
 import React from "react";
-
+import Banner from "../Ui/Banner";
 export default function Choice() {
   return (
     <>
@@ -66,7 +66,7 @@ export default function Choice() {
         </div>
       </section>
       <section className="mt-[100px]">
-        <div className="flex flex-col items-center justify-center bg-[url(./images/others/drivoxe_bg.svg)] bg-contain bg-no-repeat">
+        <div className="flex flex-col items-center justify-center bg-[url(./images/others/drivoxe_bg.svg)] bg-contain bg-no-repeat pb-10">
           <h3 className="text-xl">HOW IT WORKS</h3>
           <h2 className="text-5xl">Simple Steps to Get the Car</h2>
           <div className="mt-[100px] grid w-2/3 grid-cols-2 gap-4">
@@ -117,6 +117,22 @@ export default function Choice() {
           </div>
         </div>
       </section>
+      <Banner className="mb-10 flex items-center justify-end bg-[url(./images/banners/CTA.png)] text-white">
+        <div className="flex w-[420px] flex-col">
+          <h2 className="text-5xl">Ready to Go?</h2>
+          <p className="my-8 text-balance text-2xl">
+            Book your car wherever you are and ride with us now!
+          </p>
+          <div className="flex">
+            <img
+              className="mr-4"
+              src="./images/others/app_store.png"
+              alt="app store logo"
+            />
+            <img src="./images/others/google_play.png" alt="google play logo" />
+          </div>
+        </div>
+      </Banner>
     </>
   );
 }
