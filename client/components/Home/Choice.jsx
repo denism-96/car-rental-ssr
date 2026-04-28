@@ -4,9 +4,9 @@ export default function Choice() {
   return (
     <>
       <section className="flex">
-        <div className=" flex flex-col justify-around">
+        <div className="flex flex-col justify-around">
           <h2 className="text-5xl font-bold">Why Choose Drivoxe?</h2>
-          <p className="text-lg opacity-60 w-72 mb-14">
+          <p className="mb-14 w-72 text-lg opacity-60">
             Join our satisfied customers who trust us for their journeys. We
             serve with a lot of values that you can feel directly.
           </p>
@@ -14,13 +14,13 @@ export default function Choice() {
         <img src="./images/others/choice_car.png" alt="red car" />
       </section>
       <section>
-        <div className="flex justify-between items-center">
+        <div className="flex items-center justify-between">
           <button>---</button>
-          <div className="flex flex-col items-center justify-between w-[985px]">
-            <h2 className="text-2xl text-[var(--red-text)] font-semibold ">
+          <div className="flex w-[985px] flex-col items-center justify-between">
+            <h2 className="text-2xl font-semibold text-[var(--red-text)]">
               WHAT OUR CUSTOMERS SAY
             </h2>
-            <h3 className="text-5xl my-10">
+            <h3 className="my-10 text-5xl">
               "My Drivoxe experience was nothing short of incredible. The
               pristine car and impeccable service made my trip unforgettable.
               I'll be back for more."

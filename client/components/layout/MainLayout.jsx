@@ -3,7 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 function MainLayout() {
   return (
-    <div className="min-h-screen container relative">
+    <div className="container relative min-h-screen">
       <Header />
       <main>
         <Outlet />

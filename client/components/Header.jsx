@@ -4,11 +4,11 @@ import Button from "./Ui/Button";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center absolute max-w-[1340px] w-full  ">
+    <header className="absolute flex w-full max-w-[1340px] items-center justify-between">
       <Link to="/">
         <img src="/images/others/main_logo.svg"></img>
       </Link>
-      <nav className="max-w-sm w-full">
+      <nav className="w-full max-w-sm">
         <ul className="flex justify-between text-base">
           <li>
             <Link>Home</Link>
@@ -25,8 +25,8 @@ export default function Header() {
         </ul>
       </nav>
       <div className="flex text-base">
-        <Button className=" btn btn_transparent">Contacts</Button>
-        <Button className=" btn btn_red ml-4">Sign up</Button>
+        <Button className="btn btn_transparent">Contacts</Button>
+        <Button className="btn btn_red ml-4">Sign up</Button>
       </div>
     </header>
   );

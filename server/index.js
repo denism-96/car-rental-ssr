@@ -11,8 +11,7 @@ const PORT = process.env.PORT || 3000;
 const root = path.resolve(__dirname, "..");
 const isProduction = process.argv.includes("--prod");
 
-const readTemplate = (templatePath) =>
-  fs.readFileSync(templatePath, "utf-8");
+const readTemplate = (templatePath) => fs.readFileSync(templatePath, "utf-8");
 
 const startServer = async () => {
   let vite;
