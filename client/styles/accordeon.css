@@ -1,0 +1,61 @@
+.faq-acc-container {
+  margin: 0 auto;
+  background-color: var(--bg-gray-color);
+  height: 64px;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  padding-left: 26px;
+  padding-right: 29px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.faq-acc-btn {
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: start;
+}
+
+.faq-acc-btn::after {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  content: "";
+  border: 2px solid #222;
+  border-bottom: none;
+  border-right: none;
+  width: 12px;
+  height: 12px;
+  transform: rotate(225deg);
+  transition: all 0.4s ease-in;
+}
+
+.faq-acc-container.active > .faq-acc-btn::after {
+  content: "";
+  transform: rotate(45deg);
+  border-color: #fff;
+}
+
+.faq-acc-container.active {
+  height: 124px;
+  background-color: var(--bg-red-color);
+  color: var(--white-text);
+}
+
+.faq-acc-container p {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.faq-acc-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.faq-acc-content {
+  width: 650px;
+  margin-bottom: 80px;
+}

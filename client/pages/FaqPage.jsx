@@ -1,4 +1,5 @@
 import React from "react";
+import Accordeon from "../components/Ui/Accordeon";
 
 export default function FaqPage() {
   return (
@@ -12,6 +13,7 @@ export default function FaqPage() {
           alt="touch car panel"
         />
       </div>
+      <Accordeon />
     </section>
   );
 }
