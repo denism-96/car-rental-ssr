@@ -3,7 +3,7 @@ import Header from "../Header";
 import Footer from "../Footer";
 function MainLayout() {
   return (
-    <div className="container relative min-h-screen">
+    <div className="container relative flex min-h-screen flex-col justify-between">
       <Header />
       <main>
         <Outlet />
