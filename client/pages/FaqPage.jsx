@@ -1,5 +1,6 @@
 import React from "react";
 import Accordeon from "../components/Ui/Accordeon";
+import accordeonData from "../../server/data/accordeonsData.js";
 
 export default function FaqPage() {
   return (
@@ -13,7 +14,11 @@ export default function FaqPage() {
           alt="touch car panel"
         />
       </div>
-      <Accordeon />
+      <section className="grid grid-cols-2">
+        {accordeonData.map((item, index) => {
+          return <Accordeon accData={item} key={index} title={item[0].title} />;
+        })}
+      </section>
     </section>
   );
 }

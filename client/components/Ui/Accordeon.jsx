@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../../styles/accordeon.css";
 
-export default function Accordeon() {
+export default function Accordeon({ accData, title }) {
   const [isActive, setIsActive] = useState(null);
 
   function toogleAccordeon(index) {
@@ -10,8 +10,8 @@ export default function Accordeon() {
   return (
     <>
       <div className="faq-acc-content">
-        <h2 className="faq-acc-title">Booking and Reservations</h2>
-        {[0, 1, 2, 3, 4].map((item, index) => (
+        <h2 className="faq-acc-title">{title}</h2>
+        {accData.map((item, index) => (
           <div
             key={index}
             className={`faq-acc-container ${isActive === index ? "active" : ""}`}
@@ -20,13 +20,9 @@ export default function Accordeon() {
               onClick={() => toogleAccordeon(index)}
               className="faq-acc-btn"
             >
-              How do I book a car with Drivoxe?
+              {item.subtitle}
             </button>
-            <p>
-              Booking with Drivoxe is easy. Visit our website or app, select
-              your preferred car, set your dates, and complete the reservation
-              in a few clicks.
-            </p>
+            <p>{item.descr}</p>
           </div>
         ))}
       </div>
