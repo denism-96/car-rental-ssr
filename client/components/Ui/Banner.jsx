@@ -1,9 +1,39 @@
 import React, { Children } from "react";
+import Button from "./Button";
 
-export default function Banner({ children, className }) {
+function getPositionClass(pos) {
+  let positionClass = "items-start";
+  if (pos === "center") {
+    positionClass = "items-center";
+  } else if (pos === "right") {
+    positionClass = "items-end";
+  }
+  return positionClass;
+}
+
+export default function Banner({
+  children,
+  className,
+  position,
+  title,
+  url,
+  isButton,
+  textButton,
+}) {
+  const positionClass = getPositionClass(position);
   return (
-    <div className={`${className} h-[400px] w-full rounded-[30px]`}>
-      {children}
+    <div
+      className={`${className ? className : ""} ${positionClass} flex h-[400px] w-full flex-col rounded-[30px] bg-[url(${url})] mb-10`}
+    >
+      <div className="m-24 w-[360px]">
+        <h2 className="text-5xl">{title}</h2>
+        {children}
+        {isButton ? (
+          <Button className={"btn btn_red"}>{textButton}</Button>
+        ) : (
+          ""
+        )}
+      </div>
     </div>
   );
 }
