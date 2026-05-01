@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../../styles/accordeon.css";
+import "@client/styles/accordeon.css";
 
 export default function Accordeon({ accData, title }) {
   const [isActive, setIsActive] = useState(null);

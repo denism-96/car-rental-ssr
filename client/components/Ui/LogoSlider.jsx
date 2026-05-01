@@ -1,5 +1,5 @@
 import React from "react";
-import "../../styles/logoSlider.css";
+import "@client/styles/logoSlider.css";
 
 export default function LogoSlider() {
   const logos = [

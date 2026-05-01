@@ -1,6 +1,6 @@
 import React from "react";
-import accordeonData from "../../../../server/data/accordeonsData.js";
-import Accordeon from "../../Ui/Accordeon/Accordeon.jsx";
+import accordeonData from "@server/data/accordeonsData.js";
+import Accordeon from "@client/components/Ui/Accordeon/Accordeon.jsx";
 
 export default function AccordeonList() {
   return (

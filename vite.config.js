@@ -24,4 +24,10 @@ export default defineConfig({
   ssr: {
     noExternal: ["react-router-dom"],
   },
+  resolve: {
+    alias: {
+      "@client": path.resolve(__dirname, "./client"),
+      "@server": path.resolve(__dirname, "./server"),
+    },
+  },
 });
