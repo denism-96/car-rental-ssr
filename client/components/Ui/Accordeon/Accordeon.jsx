@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../styles/accordeon.css";
+import "../../../styles/accordeon.css";
 
 export default function Accordeon({ accData, title }) {
   const [isActive, setIsActive] = useState(null);
@@ -11,7 +11,7 @@ export default function Accordeon({ accData, title }) {
     <>
       <div className="faq-acc-content">
         <h2 className="faq-acc-title">{title}</h2>
-        {accData.map((item, index) => (
+        {accData.items.map((item, index) => (
           <div
             key={index}
             className={`faq-acc-container ${isActive === index ? "active" : ""}`}
