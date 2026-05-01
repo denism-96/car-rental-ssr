@@ -117,20 +117,22 @@ export default function Choice() {
           </div>
         </div>
       </section>
-      <Banner className="mb-10 flex items-center justify-end bg-[url(./images/banners/CTA.png)] text-white">
-        <div className="flex w-[420px] flex-col">
-          <h2 className="text-5xl">Ready to Go?</h2>
-          <p className="my-8 text-balance text-2xl">
-            Book your car wherever you are and ride with us now!
-          </p>
-          <div className="flex">
-            <img
-              className="mr-4"
-              src="./images/others/app_store.png"
-              alt="app store logo"
-            />
-            <img src="./images/others/google_play.png" alt="google play logo" />
-          </div>
+      <Banner
+        position={"right"}
+        url={"./images/banners/CTA.png"}
+        title={"Ready to Go?"}
+        className={"text-white"}
+      >
+        <p className="my-8 text-balance text-2xl">
+          Book your car wherever you are and ride with us now!
+        </p>
+        <div className="flex">
+          <img
+            className="mr-4"
+            src="./images/others/app_store.png"
+            alt="app store logo"
+          />
+          <img src="./images/others/google_play.png" alt="google play logo" />
         </div>
       </Banner>
     </>
