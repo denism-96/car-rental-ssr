@@ -16,17 +16,18 @@ export default function Banner({
   className,
   position,
   title,
-  url,
+  bgImage,
   isButton,
   textButton,
+  classTitle,
 }) {
   const positionClass = getPositionClass(position);
   return (
     <div
-      className={`${className ? className : ""} ${positionClass} flex h-[400px] w-full flex-col rounded-[30px] bg-[url(${url})] mb-10`}
+      className={`${className ? className : ""} ${positionClass} ${bgImage} mb-10 flex h-[400px] w-full flex-col rounded-[30px]`}
     >
       <div className="m-24 w-[360px]">
-        <h2 className="text-5xl">{title}</h2>
+        <h2 className={`text-5xl ${classTitle ? classTitle : ""}`}>{title}</h2>
         {children}
         {isButton ? (
           <Button className={"btn btn_red"}>{textButton}</Button>

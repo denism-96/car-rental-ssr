@@ -16,7 +16,7 @@ export default function FaqPage() {
       </section>
       <Banner
         title={"Still Have Questions?"}
-        url={"./images/banners/faq_banner.png"}
+        bgImage={'bg-[url("/images/banners/faq_banner.png")]'}
         isButton={true}
         textButton={"Contact Us"}
       >

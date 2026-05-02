@@ -119,7 +119,7 @@ export default function Choice() {
       </section>
       <Banner
         position={"right"}
-        url={"./images/banners/CTA.png"}
+        bgImage={'bg-[url("/images/banners/CTA.png")]'}
         title={"Ready to Go?"}
         className={"text-white"}
       >
