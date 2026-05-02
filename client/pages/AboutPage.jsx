@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TitlePages from "../components/TitlePages";
-
+import Banner from "@client/components/Ui/Banner.jsx";
 export default function AboutPage() {
   return (
     <>
@@ -9,7 +9,7 @@ export default function AboutPage() {
         <TitlePages
           pathPage={"Home/About us"}
           title={"Who We are"}
-          url={"./images/others/about_head_banner.png"}
+          url={"/images/others/about_head_banner.png"}
         />
       </section>
       <section className="mb-24">
@@ -89,6 +89,13 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
+      <Banner
+        title="Reserve Your Dream Car Today and Feel Best Experience Travel"
+        isButton={true}
+        textButton="Let`s Drive with Us"
+        bgImage={"bg-[url(/images/banners/about_banner.png)]"}
+        classTitle="mb-8 text-white w-[600px] text-balance "
+      ></Banner>
     </>
   );
 }
