@@ -44,7 +44,7 @@ export default function AboutPage() {
         <h2 className="mb-24 text-center align-middle text-5xl">
           Why Choose Drivoxe?
         </h2>
-        <div className="grid grid-cols-2 gap-7">
+        <div className="mb-24 grid grid-cols-2 gap-7">
           <div className="rounded-lg bg-gray-50 p-8">
             <h3 className="text-2xl">Quality & Variety</h3>
             <p className="text-lg opacity-60">
@@ -86,6 +86,48 @@ export default function AboutPage() {
               customer support, available 24/7 to assist you. Your satisfaction
               is our ultimate reward.
             </p>
+          </div>
+        </div>
+        <div className="mb-24 flex justify-between">
+          <div className="flex w-[40%] flex-col items-center justify-center">
+            <h3 className="mb-4 w-2/3 text-xl">ACHIEVEMENTS</h3>
+            <h2 className="w-2/3 text-5xl font-bold">
+              Let’s See Our Celebrate Milestones
+            </h2>
+          </div>
+          <div className="grid w-[60%] grid-cols-4 gap-7 bg-gray-50 py-24 pl-16 text-base">
+            <div className="achiv w-[130px]">
+              <img src="/images/icons/customer.svg" alt="" />
+              <p>Customer Choice Award</p>
+            </div>
+            <div className="achiv w-[130px]">
+              <img src="/images/icons/safety.svg" alt="" />
+              <p>Safety Drive Excellence</p>
+            </div>
+            <div className="achiv w-[130px]">
+              <img src="/images/icons/innovation.svg" alt="" />
+              <p>Innovation Champion</p>
+            </div>
+            <div className="achiv w-[130px]">
+              <img src="/images/icons/sustainable.svg" alt="" />
+              <p>Sustainable Travel Partner</p>
+            </div>
+            <div className="achiv w-[130px]">
+              <img src="/images/icons/best_support.svg" alt="" />
+              <p>Best Customer Support</p>
+            </div>
+            <div className="achiv w-[130px]">
+              <img src="/images/icons/busines.svg" alt="" />
+              <p>Business Growth Milestone</p>
+            </div>
+            <div className="achiv w-[130px]">
+              <img src="/images/icons/community.svg" alt="" />
+              <p>Community Engagement</p>
+            </div>
+            <div className="achiv w-[130px]">
+              <img src="/images/icons/industry.svg" alt="" />
+              <p>Industry Leadership</p>
+            </div>
           </div>
         </div>
       </section>

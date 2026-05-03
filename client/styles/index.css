@@ -65,3 +65,9 @@ body {
   color: var(--btn-white-text);
   background-color: var(--btn-red-color);
 }
+
+.achiv img {
+  margin-bottom: 16px;
+  width: 63px;
+  height: 60px;
+}
