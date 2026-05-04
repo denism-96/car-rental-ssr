@@ -7,7 +7,6 @@ export default function AboutPage() {
     <>
       <section className="mt-24">
         <TitlePages
-          pathPage={"Home/About us"}
           title={"Who We are"}
           url={"/images/others/about_head_banner.png"}
         />

@@ -7,7 +7,6 @@ export default function FaqPage() {
   return (
     <section className="mt-32">
       <TitlePages
-        pathPage={"Home/FAQs"}
         title={"Frequently Asked"}
         url={"/images/others/touch_panel.png"}
       />
