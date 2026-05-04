@@ -71,3 +71,7 @@ body {
   width: 63px;
   height: 60px;
 }
+
+.text_shadow {
+  text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
+}
