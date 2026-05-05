@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <CarsList />
+      <CarsList carsOnPage={6} />
       <Choice />
     </>
   );

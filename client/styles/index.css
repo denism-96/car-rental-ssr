@@ -75,3 +75,9 @@ body {
 .text_shadow {
   text-shadow: 5px 5px rgba(0, 0, 0, 0.3);
 }
+
+.active_pagination {
+  background-color: rgba(253, 59, 59);
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
