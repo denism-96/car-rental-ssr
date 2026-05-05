@@ -6,7 +6,7 @@ function HomePage() {
   return (
     <>
       <Hero />
-      <CarsList carsOnPage={6} />
+      <CarsList carsOnPage={6} className={"my-24 flex flex-col items-center"} />
       <Choice />
     </>
   );
