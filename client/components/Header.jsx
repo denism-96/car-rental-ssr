@@ -11,16 +11,16 @@ export default function Header() {
       <nav className="w-full max-w-sm">
         <ul className="flex justify-between text-base">
           <li>
-            <Link>Home</Link>
+            <Link to={"/"}>Home</Link>
           </li>
           <li>
-            <Link>Auto</Link>
+            <Link to={"/cars"}>Auto</Link>
           </li>
           <li>
-            <Link>About</Link>
+            <Link to={"/about"}>About</Link>
           </li>
           <li>
-            <Link>Faq`s</Link>
+            <Link to={"/faq"}>Faq`s</Link>
           </li>
         </ul>
       </nav>
