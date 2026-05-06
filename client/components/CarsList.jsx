@@ -2,34 +2,24 @@ import React from "react";
 import { useEffect, useState } from "react";
 import Button from "./Ui/Button";
 
-export default function CarsList({ carsOnPage }) {
-  const [cars, setCars] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [isActive, setIsActive] = useState(1);
-
-  const lastCarIndex = currentPage * carsOnPage;
-  const firstCarIndex = lastCarIndex - carsOnPage;
-
-  const currentCars = cars.slice(firstCarIndex, lastCarIndex);
-
+export default function CarsList({
+  carsOnPage,
+  cars,
+  firstCarIndex,
+  lastCarIndex,
+  currentPage,
+  setCurrentPage,
+  currentCars,
+  className,
+}) {
   const totalPages = Math.ceil(cars.length / carsOnPage);
 
   const paginationPages = Array.from({ length: totalPages });
 
-  function getCurrentPage() {
-    return currentPage;
-  }
-
-  useEffect(() => {
-    fetch(`http://localhost:3000/api/cars`)
-      .then((res) => res.json())
-      .then((data) => setCars(data))
-      .catch((err) => console.error(err));
-  }, []);
   return (
     <>
-      <section className="my-24 flex flex-col items-center">
-        <div className="grid max-w-[968px] grid-cols-3 gap-16">
+      <section className={` ${className} `}>
+        <div className="grid grid-cols-3 gap-16">
           {currentCars.map((item, index) => (
             <div
               key={item.id}
@@ -51,14 +41,13 @@ export default function CarsList({ carsOnPage }) {
             </div>
           ))}
         </div>
-        <div className="mt-8">
+        <div className="mt-8 flex items-center justify-center">
           {paginationPages.map((item, index) => (
             <button
-              className={`rounded-full px-2 py-1 ${isActive === index + 1 ? "active_pagination" : ""}`}
+              className={`rounded-full px-2 py-1 ${currentPage === index + 1 ? "active_pagination" : ""}`}
               key={index}
               onClick={() => {
                 setCurrentPage(index + 1);
-                setIsActive(index + 1);
               }}
             >
               0{index + 1}
