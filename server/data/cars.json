@@ -8,7 +8,7 @@
     "passengers": 5,
     "enginePower": 181,
     "engineVolume": 2.5,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -20,7 +20,7 @@
     "passengers": 5,
     "enginePower": 335,
     "engineVolume": 3.0,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -32,7 +32,7 @@
     "passengers": 5,
     "enginePower": 201,
     "engineVolume": 2.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -44,7 +44,7 @@
     "passengers": 5,
     "enginePower": 255,
     "engineVolume": 2.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -56,7 +56,7 @@
     "passengers": 5,
     "enginePower": 147,
     "engineVolume": 1.4,
-    "bodyType": "хетчбек",
+    "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -68,7 +68,7 @@
     "passengers": 5,
     "enginePower": 160,
     "engineVolume": 1.5,
-    "bodyType": "хетчбек",
+    "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -80,7 +80,7 @@
     "passengers": 5,
     "enginePower": 147,
     "engineVolume": 2.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -92,7 +92,7 @@
     "passengers": 5,
     "enginePower": 187,
     "engineVolume": 2.5,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -104,7 +104,7 @@
     "passengers": 5,
     "enginePower": 158,
     "engineVolume": 1.3,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -116,7 +116,7 @@
     "passengers": 5,
     "enginePower": 187,
     "engineVolume": 2.5,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
 
@@ -129,7 +129,7 @@
     "passengers": 5,
     "enginePower": 160,
     "engineVolume": 1.5,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -141,7 +141,7 @@
     "passengers": 5,
     "enginePower": 158,
     "engineVolume": 2.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -153,7 +153,7 @@
     "passengers": 5,
     "enginePower": 150,
     "engineVolume": 1.5,
-    "bodyType": "универсал",
+    "bodyType": "Station wagon",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -165,7 +165,7 @@
     "passengers": 5,
     "enginePower": 180,
     "engineVolume": 1.6,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -177,7 +177,7 @@
     "passengers": 5,
     "enginePower": 140,
     "engineVolume": 1.3,
-    "bodyType": "хетчбек",
+    "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png"
   },
 
@@ -190,7 +190,7 @@
     "passengers": 5,
     "enginePower": 250,
     "engineVolume": 2.0,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -202,7 +202,7 @@
     "passengers": 5,
     "enginePower": 182,
     "engineVolume": 2.5,
-    "bodyType": "универсал",
+    "bodyType": "Station wagon",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -214,7 +214,7 @@
     "passengers": 5,
     "enginePower": 283,
     "engineVolume": 0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -226,7 +226,7 @@
     "passengers": 5,
     "enginePower": 295,
     "engineVolume": 3.5,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -238,7 +238,7 @@
     "passengers": 5,
     "enginePower": 285,
     "engineVolume": 3.6,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
 
@@ -251,7 +251,7 @@
     "passengers": 5,
     "enginePower": 292,
     "engineVolume": 3.6,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -263,7 +263,7 @@
     "passengers": 5,
     "enginePower": 300,
     "engineVolume": 3.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -275,7 +275,7 @@
     "passengers": 5,
     "enginePower": 272,
     "engineVolume": 2.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -287,7 +287,7 @@
     "passengers": 4,
     "enginePower": 134,
     "engineVolume": 1.5,
-    "bodyType": "хетчбек",
+    "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -299,7 +299,7 @@
     "passengers": 4,
     "enginePower": 101,
     "engineVolume": 1.4,
-    "bodyType": "хетчбек",
+    "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png"
   },
 
@@ -312,7 +312,7 @@
     "passengers": 5,
     "enginePower": 280,
     "engineVolume": 2.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -324,7 +324,7 @@
     "passengers": 5,
     "enginePower": 246,
     "engineVolume": 2.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -336,7 +336,7 @@
     "passengers": 7,
     "enginePower": 296,
     "engineVolume": 2.0,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -348,7 +348,7 @@
     "passengers": 7,
     "enginePower": 181,
     "engineVolume": 2.5,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -360,7 +360,7 @@
     "passengers": 5,
     "enginePower": 140,
     "engineVolume": 1.4,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
 
@@ -373,7 +373,7 @@
     "passengers": 5,
     "enginePower": 180,
     "engineVolume": 1.6,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -385,7 +385,7 @@
     "passengers": 5,
     "enginePower": 170,
     "engineVolume": 2.0,
-    "bodyType": "универсал",
+    "bodyType": "Station wagon",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -397,7 +397,7 @@
     "passengers": 5,
     "enginePower": 150,
     "engineVolume": 1.5,
-    "bodyType": "хетчбек",
+    "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -409,7 +409,7 @@
     "passengers": 5,
     "enginePower": 310,
     "engineVolume": 2.0,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -421,7 +421,7 @@
     "passengers": 5,
     "enginePower": 252,
     "engineVolume": 2.0,
-    "bodyType": "седан",
+    "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png"
   },
 
@@ -434,7 +434,7 @@
     "passengers": 5,
     "enginePower": 265,
     "engineVolume": 2.0,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -458,7 +458,7 @@
     "passengers": 5,
     "enginePower": 650,
     "engineVolume": 4.0,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -470,7 +470,7 @@
     "passengers": 5,
     "enginePower": 542,
     "engineVolume": 4.0,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   },
   {
@@ -482,7 +482,7 @@
     "passengers": 5,
     "enginePower": 563,
     "engineVolume": 6.75,
-    "bodyType": "внедорожник",
+    "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png"
   }
 ]
