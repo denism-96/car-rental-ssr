@@ -12,7 +12,7 @@ export default function CarsPage() {
   const currentCars = cars.slice(firstCarIndex, lastCarIndex);
 
   useEffect(() => {
-    fetch(`http://localhost:3000/api/cars`)
+    fetch(`/api/cars`)
       .then((res) => res.json())
       .then((data) => setCars(data))
       .catch((err) => console.error(err));
@@ -28,7 +28,7 @@ export default function CarsPage() {
         <div className="flex flex-col">
           <div className="flex w-[968px] justify-between">
             <span>
-              Showing <span>{firstCarIndex + 1}</span>-
+              Showing <span>{cars.length > 0 ? firstCarIndex + 1 : 0}</span>-
               {lastCarIndex > cars.length ? cars.length : lastCarIndex} of{" "}
               {cars.length} results
             </span>
@@ -59,10 +59,10 @@ export default function CarsPage() {
           <div>
             <h2 className="uppercase">Popular cars</h2>
             <div className="flex items-center">
-              <img className="h-[83px] w-[104px]" src={cars[0].image} alt="" />
+              <img className="h-[83px] w-[104px]" src={cars[0]?.image} alt="" />
               <div>
-                <h3>{cars[0].brand}</h3>
-                <span>${cars[0].pricePerDay}/day</span>
+                <h3>{cars[0]?.brand}</h3>
+                <span>${cars[0]?.pricePerDay}/day</span>
               </div>
             </div>
           </div>
