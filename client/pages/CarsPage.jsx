@@ -18,6 +18,10 @@ export default function CarsPage() {
       .catch((err) => console.error(err));
   }, []);
 
+  function filteredCategories() {
+    return cars.slice(0, 3);
+  }
+
   return (
     <div className="my-24">
       <TitlePages
@@ -75,6 +79,7 @@ export default function CarsPage() {
               <span>Hatchback</span>
             </div>
           </div>
+          <button onClick={() => filteredCategories()}>Фильтр</button>
         </aside>
       </div>
     </div>
