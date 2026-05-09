@@ -6,10 +6,13 @@ import { useEffect, useState } from "react";
 export default function CarsPage() {
   const [cars, setCars] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
+  const [carsCategory, setCarsCategory] = useState([]);
+  const [isActiveCat, setIsActiveCat] = useState(false);
+  const visibleCars = carsCategory.length > 0 ? carsCategory : cars;
   const carsOnPage = 9;
   const lastCarIndex = currentPage * carsOnPage;
   const firstCarIndex = lastCarIndex - carsOnPage;
-  const currentCars = cars.slice(firstCarIndex, lastCarIndex);
+  const currentCars = visibleCars.slice(firstCarIndex, lastCarIndex);
 
   useEffect(() => {
     fetch(`/api/cars`)
@@ -18,8 +21,16 @@ export default function CarsPage() {
       .catch((err) => console.error(err));
   }, []);
 
-  function filteredCategories() {
-    return cars.slice(0, 3);
+  function filteredCategories(categories) {
+    if (!isActiveCat) {
+      const filterCat = cars.filter((car) => car.bodyType === categories);
+      setCarsCategory(filterCat);
+      setCurrentPage(1);
+      setIsActiveCat(true);
+    } else {
+      setCarsCategory([]);
+      setIsActiveCat(false);
+    }
   }
 
   return (
@@ -32,9 +43,12 @@ export default function CarsPage() {
         <div className="flex flex-col">
           <div className="flex w-[968px] justify-between">
             <span>
-              Showing <span>{cars.length > 0 ? firstCarIndex + 1 : 0}</span>-
-              {lastCarIndex > cars.length ? cars.length : lastCarIndex} of{" "}
-              {cars.length} results
+              Showing{" "}
+              <span>{visibleCars.length > 0 ? firstCarIndex + 1 : 0}</span>-
+              {lastCarIndex > visibleCars.length
+                ? visibleCars.length
+                : lastCarIndex}{" "}
+              of {visibleCars.length} results
             </span>
             <select name="sortCar" id="filtered_car">
               <option value="">Default Sorting</option>
@@ -44,7 +58,7 @@ export default function CarsPage() {
             </select>
           </div>
           <CarsList
-            cars={cars}
+            cars={visibleCars}
             carsOnPage={carsOnPage}
             currentPage={currentPage}
             setCurrentPage={setCurrentPage}
@@ -73,13 +87,21 @@ export default function CarsPage() {
           <div>
             <h2 className="uppercase text-gray-500">Categories</h2>
             <div className="grid grid-cols-2 uppercase">
-              <span>Sedan</span>
-              <span>Station wagon</span>
-              <span>Offroad</span>
-              <span>Hatchback</span>
+              <span
+                onClick={() => filteredCategories("Sedan")}
+                className={`${isActiveCat ? "isActiveCat" : ""} pointer`}
+              >
+                Sedan
+              </span>
+              <span onClick={() => filteredCategories("Station wagon")}>
+                Station wagon
+              </span>
+              <span onClick={() => filteredCategories("Offroad")}>Offroad</span>
+              <span onClick={() => filteredCategories("Hatchback")}>
+                Hatchback
+              </span>
             </div>
           </div>
-          <button onClick={() => filteredCategories()}>Фильтр</button>
         </aside>
       </div>
     </div>
