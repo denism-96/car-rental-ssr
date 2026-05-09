@@ -33,6 +33,7 @@ export default function CarsPage() {
     }
   }
 
+  let popularCars = [...cars].sort((a, b) => b.clicks - a.clicks).slice(0, 4);
   return (
     <div className="my-24">
       <TitlePages
@@ -76,23 +77,24 @@ export default function CarsPage() {
           />
           <div>
             <h2 className="uppercase">Popular cars</h2>
-            <div className="flex items-center">
-              <img className="h-[83px] w-[104px]" src={cars[0]?.image} alt="" />
-              <div>
-                <h3>{cars[0]?.brand}</h3>
-                <span>${cars[0]?.pricePerDay}/day</span>
-              </div>
+            <div className="">
+              {popularCars.map((item, index) => (
+                <div className="flex items-center" key={index}>
+                  <img className="h-[83px] w-[104px]" src={item.image} alt="" />
+                  <div>
+                    <h3>
+                      {item.brand} {item.model}
+                    </h3>
+                    <span>${item.pricePerDay}/day</span>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
           <div>
             <h2 className="uppercase text-gray-500">Categories</h2>
-            <div className="grid grid-cols-2 uppercase">
-              <span
-                onClick={() => filteredCategories("Sedan")}
-                className={`${isActiveCat ? "isActiveCat" : ""} pointer`}
-              >
-                Sedan
-              </span>
+            <div className="grid cursor-pointer grid-cols-2 uppercase">
+              <span onClick={() => filteredCategories("Sedan")}>Sedan</span>
               <span onClick={() => filteredCategories("Station wagon")}>
                 Station wagon
               </span>
@@ -102,6 +104,7 @@ export default function CarsPage() {
               </span>
             </div>
           </div>
+          <div></div>
         </aside>
       </div>
     </div>
