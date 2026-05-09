@@ -10,7 +10,7 @@
     "engineVolume": 2.5,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 2,
@@ -23,7 +23,7 @@
     "engineVolume": 3.0,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 1
+    "visits": 1
   },
   {
     "id": 3,
@@ -36,7 +36,7 @@
     "engineVolume": 2.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 4,
@@ -49,7 +49,7 @@
     "engineVolume": 2.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 4
+    "visits": 4
   },
   {
     "id": 5,
@@ -62,7 +62,7 @@
     "engineVolume": 1.4,
     "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 6,
@@ -75,7 +75,7 @@
     "engineVolume": 1.5,
     "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 8
+    "visits": 8
   },
   {
     "id": 7,
@@ -88,7 +88,7 @@
     "engineVolume": 2.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 11
+    "visits": 11
   },
   {
     "id": 8,
@@ -101,7 +101,7 @@
     "engineVolume": 2.5,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 68
+    "visits": 68
   },
   {
     "id": 9,
@@ -114,7 +114,7 @@
     "engineVolume": 1.3,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 24
+    "visits": 24
   },
   {
     "id": 10,
@@ -127,7 +127,7 @@
     "engineVolume": 2.5,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
 
   {
@@ -141,7 +141,7 @@
     "engineVolume": 1.5,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 1
+    "visits": 1
   },
   {
     "id": 12,
@@ -154,7 +154,7 @@
     "engineVolume": 2.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 8
+    "visits": 8
   },
   {
     "id": 13,
@@ -167,7 +167,7 @@
     "engineVolume": 1.5,
     "bodyType": "Station wagon",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 14,
@@ -180,7 +180,7 @@
     "engineVolume": 1.6,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 16
+    "visits": 16
   },
   {
     "id": 15,
@@ -193,7 +193,7 @@
     "engineVolume": 1.3,
     "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
 
   {
@@ -207,7 +207,7 @@
     "engineVolume": 2.0,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 17,
@@ -220,7 +220,7 @@
     "engineVolume": 2.5,
     "bodyType": "Station wagon",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 18,
@@ -233,7 +233,7 @@
     "engineVolume": 0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 19,
@@ -246,7 +246,7 @@
     "engineVolume": 3.5,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 20,
@@ -259,7 +259,7 @@
     "engineVolume": 3.6,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
 
   {
@@ -273,7 +273,7 @@
     "engineVolume": 3.6,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 22,
@@ -286,7 +286,7 @@
     "engineVolume": 3.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 23,
@@ -299,7 +299,7 @@
     "engineVolume": 2.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 24,
@@ -312,7 +312,7 @@
     "engineVolume": 1.5,
     "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 25,
@@ -325,7 +325,7 @@
     "engineVolume": 1.4,
     "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
 
   {
@@ -339,7 +339,7 @@
     "engineVolume": 2.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 27,
@@ -352,7 +352,7 @@
     "engineVolume": 2.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 28,
@@ -365,7 +365,7 @@
     "engineVolume": 2.0,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 29,
@@ -378,7 +378,7 @@
     "engineVolume": 2.5,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 30,
@@ -391,7 +391,7 @@
     "engineVolume": 1.4,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
 
   {
@@ -405,7 +405,7 @@
     "engineVolume": 1.6,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 32,
@@ -418,7 +418,7 @@
     "engineVolume": 2.0,
     "bodyType": "Station wagon",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 33,
@@ -431,7 +431,7 @@
     "engineVolume": 1.5,
     "bodyType": "Hatchback",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 34,
@@ -444,7 +444,7 @@
     "engineVolume": 2.0,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 35,
@@ -457,7 +457,7 @@
     "engineVolume": 2.0,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
 
   {
@@ -471,7 +471,7 @@
     "engineVolume": 2.0,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 37,
@@ -484,7 +484,7 @@
     "engineVolume": 3.9,
     "bodyType": "купе",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 38,
@@ -497,7 +497,7 @@
     "engineVolume": 4.0,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 39,
@@ -510,7 +510,7 @@
     "engineVolume": 4.0,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   },
   {
     "id": 40,
@@ -523,6 +523,6 @@
     "engineVolume": 6.75,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
-    "clicks": 0
+    "visits": 0
   }
 ]

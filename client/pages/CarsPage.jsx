@@ -7,12 +7,13 @@ export default function CarsPage() {
   const [cars, setCars] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
   const [carsCategory, setCarsCategory] = useState([]);
-  const [isActiveCat, setIsActiveCat] = useState(false);
+  const [isActiveCat, setIsActiveCat] = useState(null);
   const visibleCars = carsCategory.length > 0 ? carsCategory : cars;
   const carsOnPage = 9;
   const lastCarIndex = currentPage * carsOnPage;
   const firstCarIndex = lastCarIndex - carsOnPage;
   const currentCars = visibleCars.slice(firstCarIndex, lastCarIndex);
+  const categories = ["Sedan", "Offroad", "Station wagon", "Hatchback"];
 
   useEffect(() => {
     fetch(`/api/cars`)
@@ -26,14 +27,14 @@ export default function CarsPage() {
       const filterCat = cars.filter((car) => car.bodyType === categories);
       setCarsCategory(filterCat);
       setCurrentPage(1);
-      setIsActiveCat(true);
+      setIsActiveCat(categories);
     } else {
       setCarsCategory([]);
-      setIsActiveCat(false);
+      setIsActiveCat(null);
     }
   }
 
-  let popularCars = [...cars].sort((a, b) => b.clicks - a.clicks).slice(0, 4);
+  let popularCars = [...cars].sort((a, b) => b.visits - a.visits).slice(0, 4);
   return (
     <div className="my-24">
       <TitlePages
@@ -94,14 +95,15 @@ export default function CarsPage() {
           <div>
             <h2 className="uppercase text-gray-500">Categories</h2>
             <div className="grid cursor-pointer grid-cols-2 uppercase">
-              <span onClick={() => filteredCategories("Sedan")}>Sedan</span>
-              <span onClick={() => filteredCategories("Station wagon")}>
-                Station wagon
-              </span>
-              <span onClick={() => filteredCategories("Offroad")}>Offroad</span>
-              <span onClick={() => filteredCategories("Hatchback")}>
-                Hatchback
-              </span>
+              {categories.map((category, index) => (
+                <span
+                  key={index}
+                  className={`${isActiveCat === category ? "isActiveCat" : ""} mr-2`}
+                  onClick={() => filteredCategories(category)}
+                >
+                  {category}
+                </span>
+              ))}
             </div>
           </div>
           <div></div>
