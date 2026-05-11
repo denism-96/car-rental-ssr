@@ -53,26 +53,98 @@ export default function CarsCard() {
               of this classic masterpiece. Cruise with confidence, top down.
             </p>
             <Button className="btn btn_red mb-8">Book Now</Button>
-            <h3>SPECIFICATIONS</h3>
-            <div>
-              <span>{car.year} year</span>
-              <span>{car.passengers} passengers</span>
-              <span>{car.enginePower} HP</span>
-              <span>{car.engineVolume} L.</span>
-              <span>{car.bodyType}</span>
+            <h3 className="mb-5">SPECIFICATIONS</h3>
+            <div className="grid grid-cols-2 gap-2 [&>div]:flex [&>div]:flex-row [&>div]:items-start">
+              <div>
+                <img
+                  className="mr-3"
+                  src="/images/carsCards/drive.svg"
+                  alt=""
+                />
+                <span>{car.year} year</span>
+              </div>
+              <div>
+                <img
+                  className="mr-3"
+                  src="/images/carsCards/passengers.svg"
+                  alt=""
+                />
+                <span>{car.passengers} passengers</span>
+              </div>
+              <div>
+                <img
+                  className="mr-3"
+                  src="/images/carsCards/power.svg"
+                  alt=""
+                />
+                <span>{car.enginePower} HP</span>
+              </div>
+              <div>
+                <img
+                  className="mr-3"
+                  src="/images/carsCards/engine.svg"
+                  alt=""
+                />
+                <span>{car.engineVolume} L.</span>
+              </div>
+              <div>
+                <img className="mr-3" src="/images/carsCards/car.svg" alt="" />
+                <span>{car.bodyType}</span>
+              </div>
             </div>
           </div>
         </div>
-        <Banner
-          title={
-            "Book Your Adventure Today and Feel the Power of the Open Road."
-          }
-          isButton={true}
-          textButton="Let’s Drive with Us"
-          classTitle={"text-white w-[841px] mb-10"}
-          bgImage={'bg-[url("/images/banners/cars_card_banner.png")]'}
-        />
       </section>
+      <section className="flex justify-between [&_h3]:mb-2 [&_h3]:text-xl [&_p]:text-lg">
+        <h2 className="w-fit text-5xl font-semibold">Car Features</h2>
+        <div className="[&>div]:mb-6 [&>div]:h-[100%] [&>div]:max-h-[104px] [&>div]:max-w-[480px] [&>div]:rounded-xl [&>div]:bg-slate-100 [&>div]:px-5 [&>div]:py-2">
+          <div>
+            <h3>Convertible Top</h3>
+            <p>
+              Enjoy the open-air experience with an easy power-operated
+              convertible top.
+            </p>
+          </div>
+          <div>
+            <h3>Infotainment System</h3>
+            <p>Stay connected with a modern and flexible multimedia system.</p>
+          </div>
+          <div>
+            <h3>Leather Interior</h3>
+            <p>
+              Experience premium comfort with leather-trimmed seats and design.
+            </p>
+          </div>
+        </div>
+        <div className="[&>div]:mb-6 [&>div]:h-[100%] [&>div]:max-h-[104px] [&>div]:max-w-[480px] [&>div]:rounded-xl [&>div]:bg-slate-100 [&>div]:px-5 [&>div]:py-2">
+          <div>
+            <h3>Sport Mode</h3>
+            <p>
+              Unleash the full power of the V8 engine for an exhilarating ride.
+            </p>
+          </div>
+          <div>
+            <h3>Advanced Safety</h3>
+            <p>
+              Benefit from modern safety features, including airbags and
+              stability control.
+            </p>
+          </div>
+          <div>
+            <h3>Iconic Design</h3>
+            <p>
+              Turn heads with the timeless, bold styling of the Ford Mustang.
+            </p>
+          </div>
+        </div>
+      </section>
+      <Banner
+        title={"Book Your Adventure Today and Feel the Power of the Open Road."}
+        isButton={true}
+        textButton="Let’s Drive with Us"
+        classTitle={"text-white w-[841px] mb-10"}
+        bgImage={'bg-[url("/images/banners/cars_card_banner.png")]'}
+      />
     </>
   );
 }
