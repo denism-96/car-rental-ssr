@@ -1,6 +1,7 @@
 import React from "react";
 import { useEffect, useState } from "react";
 import Button from "./Ui/Button";
+import { Link } from "react-router-dom";
 
 export default function CarsList({
   carsOnPage,
@@ -23,7 +24,7 @@ export default function CarsList({
           {currentCars.map((item, index) => (
             <div
               key={item.id}
-              className="flex h-[406px] w-[280px] flex-col justify-between rounded-lg bg-gray-50 p-3"
+              className="flex h-[406px] w-[280px] flex-col justify-between rounded-lg bg-gray-50 p-3 hover:bg-slate-200"
             >
               <img className="mb-8" src={item.image} alt="car image" />
               <div className="flex grow flex-col justify-between">
@@ -35,7 +36,11 @@ export default function CarsList({
                   <span className="text-2xl font-bold">
                     {item.pricePerDay}/day
                   </span>
-                  <Button className={"btn btn_red"}>Rent</Button>
+
+                  <Link to={`${item.id}`}>
+                    {" "}
+                    <Button className={"btn btn_red"}>Rent</Button>
+                  </Link>
                 </div>
               </div>
             </div>

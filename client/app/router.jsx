@@ -5,6 +5,7 @@ import AboutPage from "../pages/AboutPage";
 import NotFound from "../pages/NotFound";
 import FaqPage from "../pages/FaqPage";
 import CarsPage from "../pages/CarsPage";
+import CarsCard from "../components/CarsCard";
 
 function AppRouter() {
   return (
@@ -14,6 +15,7 @@ function AppRouter() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/cars" element={<CarsPage />} />
+        <Route path="/cars/:id" element={<CarsCard />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
