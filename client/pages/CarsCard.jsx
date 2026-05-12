@@ -1,26 +1,35 @@
 import React, { useEffect, useState } from "react";
-import TitlePages from "./TitlePages";
-import Banner from "./Ui/Banner";
-import Button from "./Ui/Button";
+import TitlePages from "../components/TitlePages";
+import Banner from "../components/Ui/Banner";
+import Button from "../components/Ui/Button";
+import NotFound from "@client/pages/NotFound.jsx";
 import { useParams } from "react-router-dom";
 
 export default function CarsCard() {
   const [cars, setCars] = useState([]);
-  const [car, setCar] = useState({});
+  const [car, setCar] = useState(null);
+  const [isLoading, setIsLoading] = useState(true);
   const { id } = useParams();
   useEffect(() => {
+    setIsLoading(true);
     fetch(`/api/cars`)
       .then((res) => res.json())
       .then((data) => {
         setCars(data);
-        for (let i = 0; i < data.length; i++) {
-          if (data[i].id === Number(id)) {
-            return setCar(data[i]);
-          }
-        }
+        const foundCar = data.find((item) => item.id === +id);
+        setCar(foundCar || null);
       })
-      .catch((err) => console.error(err));
+      .catch((err) => console.error(err))
+      .finally(() => setIsLoading(false));
   }, [id]);
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
+
+  if (!car) {
+    return <NotFound />;
+  }
 
   return (
     <>

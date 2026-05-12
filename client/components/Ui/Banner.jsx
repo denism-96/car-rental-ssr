@@ -1,5 +1,6 @@
 import React, { Children } from "react";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function getPositionClass(pos) {
   let positionClass = "items-start";
@@ -30,7 +31,9 @@ export default function Banner({
         <h2 className={`text-5xl ${classTitle ? classTitle : ""}`}>{title}</h2>
         {children}
         {isButton ? (
-          <Button className={"btn btn_red"}>{textButton}</Button>
+          <Link to={"/cars"}>
+            <Button className={"btn btn_red"}>{textButton}</Button>
+          </Link>
         ) : (
           ""
         )}

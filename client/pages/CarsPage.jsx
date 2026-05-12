@@ -1,6 +1,7 @@
 import React from "react";
 import TitlePages from "@client/components/TitlePages.jsx";
 import CarsList from "@client/components/CarsList.jsx";
+import Banner from "@client/components/Ui/Banner.jsx";
 import { useEffect, useState } from "react";
 
 export default function CarsPage() {
@@ -43,7 +44,7 @@ export default function CarsPage() {
       />
       <div className="flex justify-between">
         <div className="flex flex-col">
-          <div className="flex w-[968px] justify-between">
+          <div className="mb-10 flex w-[968px] justify-between">
             <span>
               Showing{" "}
               <span>{visibleCars.length > 0 ? firstCarIndex + 1 : 0}</span>-
@@ -74,11 +75,11 @@ export default function CarsPage() {
             name="search_car"
             type="text"
             placeholder="Search Your Pick Car..."
-            className="border"
+            className="mb-10 border"
           />
           <div>
             <h2 className="uppercase">Popular cars</h2>
-            <div className="">
+            <div className="mb-10">
               {popularCars.map((item, index) => (
                 <div className="flex items-center" key={index}>
                   <img className="h-[83px] w-[104px]" src={item.image} alt="" />
@@ -109,6 +110,14 @@ export default function CarsPage() {
           <div></div>
         </aside>
       </div>
+      <Banner
+        title="Explore Our Fleet and Book Your Dream Car Today!"
+        classTitle="text-white mb-10"
+        position="right"
+        bgImage={'bg-[url("/images/banners/cars_banner.png")]'}
+        isButton={true}
+        textButton={"Let’s Drive with Us"}
+      />
     </div>
   );
 }

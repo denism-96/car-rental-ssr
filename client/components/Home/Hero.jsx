@@ -47,7 +47,6 @@ export default function Hero() {
                 Consult
               </Button>
             </div>
-            <p className="mt-10 text-base">Learn more</p>
           </div>
         </div>
       </div>

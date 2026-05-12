@@ -5,7 +5,7 @@ import AboutPage from "../pages/AboutPage";
 import NotFound from "../pages/NotFound";
 import FaqPage from "../pages/FaqPage";
 import CarsPage from "../pages/CarsPage";
-import CarsCard from "../components/CarsCard";
+import CarsCard from "../pages/CarsCard";
 
 function AppRouter() {
   return (

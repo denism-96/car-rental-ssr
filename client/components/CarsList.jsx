@@ -37,7 +37,7 @@ export default function CarsList({
                     {item.pricePerDay}/day
                   </span>
 
-                  <Link to={`${item.id}`}>
+                  <Link to={`/cars/${item.id}`}>
                     {" "}
                     <Button className={"btn btn_red"}>Rent</Button>
                   </Link>
