@@ -20,7 +20,7 @@
     "pricePerDay": 120,
     "passengers": 5,
     "enginePower": 335,
-    "engineVolume": 3.0,
+    "engineVolume": 3,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
     "visits": 1
@@ -33,7 +33,7 @@
     "pricePerDay": 80,
     "passengers": 5,
     "enginePower": 201,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -46,7 +46,7 @@
     "pricePerDay": 95,
     "passengers": 5,
     "enginePower": 255,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 4
@@ -85,7 +85,7 @@
     "pricePerDay": 65,
     "passengers": 5,
     "enginePower": 147,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 11
@@ -129,7 +129,6 @@
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
   },
-
   {
     "id": 11,
     "brand": "Chevrolet",
@@ -151,7 +150,7 @@
     "pricePerDay": 75,
     "passengers": 5,
     "enginePower": 158,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 8
@@ -195,7 +194,6 @@
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
   },
-
   {
     "id": 16,
     "brand": "Volvo",
@@ -204,7 +202,7 @@
     "pricePerDay": 110,
     "passengers": 5,
     "enginePower": 250,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -261,7 +259,6 @@
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
   },
-
   {
     "id": 21,
     "brand": "Dodge",
@@ -283,7 +280,7 @@
     "pricePerDay": 105,
     "passengers": 5,
     "enginePower": 300,
-    "engineVolume": 3.0,
+    "engineVolume": 3,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -296,7 +293,7 @@
     "pricePerDay": 95,
     "passengers": 5,
     "enginePower": 272,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -327,7 +324,6 @@
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
   },
-
   {
     "id": 26,
     "brand": "Alfa Romeo",
@@ -336,7 +332,7 @@
     "pricePerDay": 110,
     "passengers": 5,
     "enginePower": 280,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -349,7 +345,7 @@
     "pricePerDay": 115,
     "passengers": 5,
     "enginePower": 246,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -362,7 +358,7 @@
     "pricePerDay": 150,
     "passengers": 7,
     "enginePower": 296,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -393,7 +389,6 @@
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
   },
-
   {
     "id": 31,
     "brand": "Citroen",
@@ -415,7 +410,7 @@
     "pricePerDay": 75,
     "passengers": 5,
     "enginePower": 170,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Station wagon",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -441,7 +436,7 @@
     "pricePerDay": 100,
     "passengers": 5,
     "enginePower": 310,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -454,12 +449,11 @@
     "pricePerDay": 120,
     "passengers": 5,
     "enginePower": 252,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Sedan",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
   },
-
   {
     "id": 36,
     "brand": "Porsche",
@@ -468,7 +462,7 @@
     "pricePerDay": 180,
     "passengers": 5,
     "enginePower": 265,
-    "engineVolume": 2.0,
+    "engineVolume": 2,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -494,7 +488,7 @@
     "pricePerDay": 600,
     "passengers": 5,
     "enginePower": 650,
-    "engineVolume": 4.0,
+    "engineVolume": 4,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -507,7 +501,7 @@
     "pricePerDay": 550,
     "passengers": 5,
     "enginePower": 542,
-    "engineVolume": 4.0,
+    "engineVolume": 4,
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
@@ -524,5 +518,109 @@
     "bodyType": "Offroad",
     "image": "/images/cars/toyota_camry.png",
     "visits": 0
+  },
+  {
+    "brand": "1",
+    "model": "1",
+    "year": "1",
+    "pricePerDay": "1",
+    "passengers": "1",
+    "enginePower": "1",
+    "engineVolume": "1",
+    "bodyType": "1",
+    "image": "/images/cars/toyota_camry.png",
+    "visits": 0,
+    "id": 1778615453130
+  },
+  {
+    "brand": "1",
+    "model": "1",
+    "year": "1",
+    "pricePerDay": "1",
+    "passengers": "1",
+    "enginePower": "1",
+    "engineVolume": "1",
+    "bodyType": "1",
+    "image": "/images/cars/toyota_camry.png",
+    "visits": 0,
+    "id": 1778615454538
+  },
+  {
+    "brand": "1",
+    "model": "1",
+    "year": "1",
+    "pricePerDay": "1",
+    "passengers": "1",
+    "enginePower": "1",
+    "engineVolume": "1",
+    "bodyType": "1",
+    "image": "/images/cars/toyota_camry.png",
+    "visits": 0,
+    "id": 1778615454717
+  },
+  {
+    "brand": "1",
+    "model": "1",
+    "year": "1",
+    "pricePerDay": "1",
+    "passengers": "1",
+    "enginePower": "1",
+    "engineVolume": "1",
+    "bodyType": "1",
+    "image": "/images/cars/toyota_camry.png",
+    "visits": 0,
+    "id": 1778615454887
+  },
+  {
+    "brand": "1",
+    "model": "1",
+    "year": "1",
+    "pricePerDay": "1",
+    "passengers": "1",
+    "enginePower": "1",
+    "engineVolume": "1",
+    "bodyType": "1",
+    "image": "/images/cars/toyota_camry.png",
+    "visits": 0,
+    "id": 1778615455051
+  },
+  {
+    "brand": "1",
+    "model": "1",
+    "year": "1",
+    "pricePerDay": "1",
+    "passengers": "1",
+    "enginePower": "1",
+    "engineVolume": "1",
+    "bodyType": "1",
+    "image": "/images/cars/toyota_camry.png",
+    "visits": 0,
+    "id": 1778615489018
+  },
+  {
+    "brand": "1",
+    "model": "1",
+    "year": "1",
+    "pricePerDay": "1",
+    "passengers": "1",
+    "enginePower": "1",
+    "engineVolume": "1",
+    "bodyType": "1",
+    "image": "/images/cars/toyota_camry.png",
+    "visits": 0,
+    "id": 1778615507670
+  },
+  {
+    "brand": "2",
+    "model": "32",
+    "year": "2",
+    "pricePerDay": "22",
+    "passengers": "2",
+    "enginePower": "2",
+    "engineVolume": "4124",
+    "bodyType": "222",
+    "image": "/images/cars/toyota_camry.png",
+    "visits": 0,
+    "id": 1778615517273
   }
 ]

@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 
 export default function AdminPage() {
-  const handler = (e) => {
+  const handler = async (e) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
     let randomId = Math.floor(Math.random() * 100000 + 100);
     const car = {
-      id: () => Math.random() * 100000 + 100,
       brand: formData.get("brand"),
       model: formData.get("model"),
       year: formData.get("year"),
@@ -16,10 +15,16 @@ export default function AdminPage() {
       engineVolume: formData.get("engineVolume"),
       bodyType: formData.get("bodyType"),
       image: "/images/cars/toyota_camry.png",
-      visits: formData.get("visits"),
+      visits: 0,
     };
     e.currentTarget.reset();
-    return car;
+    await fetch("/api/cars", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(car),
+    });
   };
 
   return (
@@ -79,12 +84,6 @@ export default function AdminPage() {
           />
           <button type="submit">Добавить автомобиль</button>
         </form>
-      </div>
-      <div>
-        <button>Удалить автомобиль</button>
-      </div>
-      <div>
-        <button>Редактировать данные автомобиля</button>
       </div>
     </div>
   );

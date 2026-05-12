@@ -10,11 +10,12 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 const root = path.resolve(__dirname, "..");
 const isProduction = process.argv.includes("--prod");
-
+const carsFile = path.resolve("server/data/cars.json");
 const readTemplate = (templatePath) => fs.readFileSync(templatePath, "utf-8");
 
 const startServer = async () => {
   let vite;
+  app.use(express.json());
 
   app.use(express.static(path.resolve(root, "public"), { index: false }));
 
@@ -38,7 +39,31 @@ const startServer = async () => {
   app.get("/api/cars", (req, res) => {
     res.json(getCars());
   });
+  app.post("/api/cars", (req, res) => {
+    console.log("POST /api/cars HIT");
+    try {
+      const newCar = req.body;
 
+      const fileData = fs.readFileSync(carsFile, "utf-8");
+      const cars = JSON.parse(fileData || "[]");
+
+      const carWithId = {
+        ...newCar,
+        id: Date.now(),
+      };
+
+      cars.push(carWithId);
+
+      fs.writeFileSync(carsFile, JSON.stringify(cars, null, 2));
+
+      res.json({
+        success: true,
+        car: carWithId,
+      });
+    } catch (err) {
+      res.status(500).json({ error: "Failed to save car" });
+    }
+  });
   app.get("*", async (req, res) => {
     try {
       const url = req.originalUrl;
