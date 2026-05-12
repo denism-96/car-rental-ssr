@@ -6,6 +6,7 @@ import NotFound from "../pages/NotFound";
 import FaqPage from "../pages/FaqPage";
 import CarsPage from "../pages/CarsPage";
 import CarsCard from "../pages/CarsCard";
+import AdminPage from "../pages/AdminPage";
 
 function AppRouter() {
   return (
@@ -16,6 +17,7 @@ function AppRouter() {
         <Route path="/faq" element={<FaqPage />} />
         <Route path="/cars" element={<CarsPage />} />
         <Route path="/cars/:id" element={<CarsCard />} />
+        <Route path="/admin" element={<AdminPage />} />
         <Route path="*" element={<NotFound />} />
       </Route>
     </Routes>
